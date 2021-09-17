@@ -1,0 +1,17 @@
+{
+	"name": "SqlServer_EMP_TGT",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=MAHESH\\JUST_INTO_DS;initial catalog=AdventureWorks",
+			"userName": "Visitor",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmNmM3ZWUwZi0wNWU3LTQ2YmUtODQzMS0xMTllYTU4MmY2NDciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

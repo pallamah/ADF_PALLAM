@@ -1,0 +1,41 @@
+{
+	"name": "DT_SourceData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_EMP_SRC",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "Sales_Input",
+				"container": "adfpalla"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "CustId",
+				"type": "String"
+			},
+			{
+				"name": " CustName",
+				"type": "String"
+			},
+			{
+				"name": " CustAddress",
+				"type": "String"
+			},
+			{
+				"name": " CustNumber",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

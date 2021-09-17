@@ -1,0 +1,24 @@
+{
+	"name": "EmpSourceFile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_EMP_SRC",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Employee.csv",
+				"container": "adfpalla"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "EmpTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer_EMP_TGT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tbl_employee"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "ADF-PALLAM",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6d4ed10e-e880-434a-a807-dd7be5e1773a",
+		"tenantId": "d9e01fe0-ad66-4d4b-814b-ccc1f827436f"
+	}
+}
