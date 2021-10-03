@@ -1,0 +1,27 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "EmpTable",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				},
+				{
+					"name": "source2"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "Join1"
+				}
+			],
+			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table') ~> source1\nsource(allowSchemaDrift: true,\n\tvalidateSchema: false) ~> source2\nsource1 join(ERROR_FUNCTION('') == ERROR_FUNCTION(''),\n\tjoinType:'inner',\n\tbroadcast: 'auto')~> Join1"
+		}
+	}
+}
