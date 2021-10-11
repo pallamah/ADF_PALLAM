@@ -1,0 +1,23 @@
+{
+	"name": "ds_azblobFor_RESTAPi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ABS_EVENT_TRIGER",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "input",
+				"container": "global"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
