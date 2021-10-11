@@ -5,13 +5,27 @@
 			"referenceName": "LS_ABS_EVENT_TRIGER",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"sourcePath": {
+				"type": "string"
+			},
+			"sourceFile": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "input",
-				"container": "global"
+				"fileName": {
+					"value": "@dataset().sourceFile",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().sourcePath",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

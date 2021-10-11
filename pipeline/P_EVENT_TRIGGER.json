@@ -60,7 +60,17 @@
 				"inputs": [
 					{
 						"referenceName": "ds_Event_Trigger_SRC",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"sourcePath": {
+								"value": "@pipeline().parameters.sourceFile",
+								"type": "Expression"
+							},
+							"sourceFile": {
+								"value": "@pipeline().parameters.sourceFile",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
@@ -71,6 +81,14 @@
 				]
 			}
 		],
+		"parameters": {
+			"sourcePath": {
+				"type": "string"
+			},
+			"sourceFile": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
