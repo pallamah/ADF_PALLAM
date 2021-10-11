@@ -23,6 +23,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlServer_EMP_TGT'"
 		},
+		"LS_AzureDatabricks_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'LS_AzureDatabricks'"
+		},
 		"SqlServer_EMP_TGT_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Visitor"
@@ -75,6 +79,9 @@
 					},
 					"LS_ABS_EVENT_TRIGER_connectionString": {
 						"value": "[parameters('LS_ABS_EVENT_TRIGER_connectionString')]"
+					},
+					"LS_AzureDatabricks_accessToken": {
+						"value": "[parameters('LS_AzureDatabricks_accessToken')]"
 					},
 					"SqlServer_EMP_TGT_connectionString": {
 						"value": "[parameters('SqlServer_EMP_TGT_connectionString')]"

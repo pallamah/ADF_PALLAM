@@ -17,6 +17,9 @@
 		"SqlServer_EMP_TGT_password": {
 			"value": ""
 		},
+		"LS_AzureDatabricks_accessToken": {
+			"value": ""
+		},
 		"SqlServer_EMP_TGT_properties_typeProperties_userName": {
 			"value": "Visitor"
 		},
