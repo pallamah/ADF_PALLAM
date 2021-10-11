@@ -47,6 +47,10 @@
 			"type": "string",
 			"defaultValue": "https://jsonplaceholder.typicode.com/posts"
 		},
+		"T_ADB_EVENT_TRIGGER_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/2599db6c-5530-4709-b593-47e788123f97/resourceGroups/MAHESH_PALLA/providers/Microsoft.Storage/storageAccounts/storgaemahesh"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -112,6 +116,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"T_ADB_EVENT_TRIGGER_properties_typeProperties_scope": {
+						"value": "[parameters('T_ADB_EVENT_TRIGGER_properties_typeProperties_scope')]"
 					},
 					"T_EventBased_properties_P_EVENT_TRIGGER_parameters_sourcePath": {
 						"value": "[parameters('T_EventBased_properties_P_EVENT_TRIGGER_parameters_sourcePath')]"
