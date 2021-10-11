@@ -28,6 +28,9 @@
 		},
 		"T_EventBased_properties_typeProperties_scope": {
 			"value": "/subscriptions/2599db6c-5530-4709-b593-47e788123f97/resourceGroups/MAHESH_PALLA/providers/Microsoft.Storage/storageAccounts/storgaemahesh"
+		},
+		"LS_RestService_properties_typeProperties_url": {
+			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
 	}
 }
