@@ -18,7 +18,7 @@
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
 			"blobPathBeginsWith": "/global/blobs/input/",
-			"blobPathEndsWith": "*.CSV",
+			"blobPathEndsWith": ".csv",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/2599db6c-5530-4709-b593-47e788123f97/resourceGroups/MAHESH_PALLA/providers/Microsoft.Storage/storageAccounts/storgaemahesh",
 			"events": [
