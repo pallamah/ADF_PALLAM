@@ -14,6 +14,9 @@
 					"secureInput": false
 				},
 				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Shared/ADB_Read_Write"
+				},
 				"linkedServiceName": {
 					"referenceName": "LS_AzureDatabricks",
 					"type": "LinkedServiceReference"
