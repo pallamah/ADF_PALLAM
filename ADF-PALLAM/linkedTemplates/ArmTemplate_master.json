@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage_EMP_SRC'"
 		},
+		"LS_ABS_EVENT_TRIGER_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_ABS_EVENT_TRIGER'"
+		},
 		"SqlServer_EMP_TGT_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'SqlServer_EMP_TGT'"
@@ -18,10 +22,6 @@
 		"SqlServer_EMP_TGT_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlServer_EMP_TGT'"
-		},
-		"LS_ABS_EVENT_TRIGER_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'LS_ABS_EVENT_TRIGER'"
 		},
 		"SqlServer_EMP_TGT_properties_typeProperties_userName": {
 			"type": "string",

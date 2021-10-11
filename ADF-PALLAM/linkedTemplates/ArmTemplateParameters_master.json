@@ -8,13 +8,13 @@
 		"AzureBlobStorage_EMP_SRC_connectionString": {
 			"value": ""
 		},
+		"LS_ABS_EVENT_TRIGER_connectionString": {
+			"value": ""
+		},
 		"SqlServer_EMP_TGT_connectionString": {
 			"value": ""
 		},
 		"SqlServer_EMP_TGT_password": {
-			"value": ""
-		},
-		"LS_ABS_EVENT_TRIGER_connectionString": {
 			"value": ""
 		},
 		"SqlServer_EMP_TGT_properties_typeProperties_userName": {
