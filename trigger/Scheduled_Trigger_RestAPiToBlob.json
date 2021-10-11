@@ -2,7 +2,7 @@
 	"name": "Scheduled_Trigger_RestAPiToBlob",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
