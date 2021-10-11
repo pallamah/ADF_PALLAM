@@ -19,9 +19,17 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlServer_EMP_TGT'"
 		},
+		"LS_ABS_EVENT_TRIGER_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_ABS_EVENT_TRIGER'"
+		},
 		"SqlServer_EMP_TGT_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Visitor"
+		},
+		"T_EventBased_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/2599db6c-5530-4709-b593-47e788123f97/resourceGroups/MAHESH_PALLA/providers/Microsoft.Storage/storageAccounts/storgaemahesh"
 		},
 		"containerUri": {
 			"type": "string",
@@ -53,6 +61,9 @@
 					"AzureBlobStorage_EMP_SRC_connectionString": {
 						"value": "[parameters('AzureBlobStorage_EMP_SRC_connectionString')]"
 					},
+					"LS_ABS_EVENT_TRIGER_connectionString": {
+						"value": "[parameters('LS_ABS_EVENT_TRIGER_connectionString')]"
+					},
 					"SqlServer_EMP_TGT_connectionString": {
 						"value": "[parameters('SqlServer_EMP_TGT_connectionString')]"
 					},
@@ -61,6 +72,9 @@
 					},
 					"SqlServer_EMP_TGT_properties_typeProperties_userName": {
 						"value": "[parameters('SqlServer_EMP_TGT_properties_typeProperties_userName')]"
+					},
+					"T_EventBased_properties_typeProperties_scope": {
+						"value": "[parameters('T_EventBased_properties_typeProperties_scope')]"
 					}
 				}
 			},
