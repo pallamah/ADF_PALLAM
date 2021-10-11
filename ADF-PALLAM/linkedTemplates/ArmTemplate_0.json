@@ -593,7 +593,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Copy data1",
+						"name": "C_EVENT_TRIGGER",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
