@@ -1,0 +1,23 @@
+{
+	"name": "ds_Event_Trigger_Sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ABS_EVENT_TRIGER",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "output",
+				"container": "global"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
