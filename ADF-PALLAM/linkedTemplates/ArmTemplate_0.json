@@ -843,7 +843,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/global/blobs/input/",
-					"blobPathEndsWith": "*.csv",
+					"blobPathEndsWith": "*.CSV",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('T_EventBased_properties_typeProperties_scope')]",
 					"events": [
