@@ -1,0 +1,9 @@
+{
+	"name": "ADFMAHESHPRACTICE",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c9ab571c-21b9-470a-80a8-8eb7fb90e935",
+		"tenantId": "86580942-e30d-4831-ac00-ae82c8a420ae"
+	}
+}
