@@ -26,8 +26,12 @@
 					},
 					"sink": {
 						"type": "SqlDWSink",
-						"allowCopyCommand": true,
-						"tableOption": "autoCreate",
+						"allowPolyBase": true,
+						"polyBaseSettings": {
+							"rejectValue": 0,
+							"rejectType": "value",
+							"useTypeDefault": true
+						},
 						"disableMetricsCollection": false
 					},
 					"enableStaging": true,
@@ -93,16 +97,6 @@
 							},
 							{
 								"source": {
-									"name": "ip_address",
-									"type": "String"
-								},
-								"sink": {
-									"name": "ip_adress",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
 									"name": "cc",
 									"type": "String"
 								},
@@ -139,16 +133,6 @@
 								"sink": {
 									"name": "salary",
 									"type": "Int32"
-								}
-							},
-							{
-								"source": {
-									"name": "title",
-									"type": "String"
-								},
-								"sink": {
-									"name": "tile",
-									"type": "String"
 								}
 							},
 							{
