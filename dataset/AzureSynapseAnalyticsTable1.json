@@ -5,23 +5,12 @@
 			"referenceName": "AzureSynapseAnalytics1",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"TableName": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "AzureSqlDWTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": {
-				"value": "@dataset().TableName",
-				"type": "Expression"
-			},
-			"table": {
-				"value": "@dataset().TableName",
-				"type": "Expression"
-			}
+			"schema": "dbo",
+			"table": "logdata"
 		}
 	}
 }
