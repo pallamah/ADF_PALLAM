@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADFMAHESHPRACTICE"
+		},
+		"AzureBlobStorage_EMP_SRC_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSynapseAnalytics1_connectionString": {
+			"value": ""
+		},
+		"SqlServer_EMP_TGT_connectionString": {
+			"value": ""
+		},
+		"SqlServer_EMP_TGT_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adlsgen2mahesh.dfs.core.windows.net"
+		},
+		"SqlServer_EMP_TGT_properties_typeProperties_userName": {
+			"value": "Visitor"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
