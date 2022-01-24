@@ -1,0 +1,76 @@
+{
+	"name": "Parquet3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "parquetfiles"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Columnundefined1",
+				"type": "UTF8"
+			},
+			{
+				"name": "Columnundefined2",
+				"type": "UTF8"
+			},
+			{
+				"name": "Columnundefined3",
+				"type": "UTF8"
+			},
+			{
+				"name": "Columnundefined4",
+				"type": "UTF8"
+			},
+			{
+				"name": "Columnundefined5",
+				"type": "UTF8"
+			},
+			{
+				"name": "Columnundefined6",
+				"type": "UTF8"
+			},
+			{
+				"name": "Columnundefined7",
+				"type": "UTF8"
+			},
+			{
+				"name": "Columnundefined8",
+				"type": "UTF8"
+			},
+			{
+				"name": "Columnundefined9",
+				"type": "UTF8"
+			},
+			{
+				"name": "Columnundefined10",
+				"type": "UTF8"
+			},
+			{
+				"name": "Columnundefined11",
+				"type": "UTF8"
+			},
+			{
+				"name": "Columnundefined12",
+				"type": "UTF8"
+			},
+			{
+				"name": "Columnundefined13",
+				"type": "UTF8"
+			},
+			{
+				"name": "Columnundefined14",
+				"type": "UTF8"
+			}
+		]
+	}
+}
