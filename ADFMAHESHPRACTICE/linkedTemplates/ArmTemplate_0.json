@@ -143,23 +143,12 @@
 					"referenceName": "AzureSynapseAnalytics1",
 					"type": "LinkedServiceReference"
 				},
-				"parameters": {
-					"TableName": {
-						"type": "string"
-					}
-				},
 				"annotations": [],
 				"type": "AzureSqlDWTable",
 				"schema": [],
 				"typeProperties": {
-					"schema": {
-						"value": "@dataset().TableName",
-						"type": "Expression"
-					},
-					"table": {
-						"value": "@dataset().TableName",
-						"type": "Expression"
-					}
+					"schema": "dbo",
+					"table": "LOGDATA33"
 				}
 			},
 			"dependsOn": [
@@ -499,7 +488,6 @@
 								"type": "SqlDWSink",
 								"allowCopyCommand": true,
 								"copyCommandSettings": {},
-								"tableOption": "autoCreate",
 								"disableMetricsCollection": false
 							},
 							"enableStaging": true,
@@ -509,6 +497,141 @@
 									"type": "LinkedServiceReference"
 								},
 								"path": "synapsestaging"
+							},
+							"translator": {
+								"type": "TabularTranslator",
+								"mappings": [
+									{
+										"source": {
+											"name": "registration_dttm",
+											"type": "DateTime"
+										},
+										"sink": {
+											"name": "registration_dttm",
+											"type": "DateTime"
+										}
+									},
+									{
+										"source": {
+											"name": "id",
+											"type": "Int32"
+										},
+										"sink": {
+											"name": "id",
+											"type": "Int32"
+										}
+									},
+									{
+										"source": {
+											"name": "first_name",
+											"type": "String"
+										},
+										"sink": {
+											"name": "first_name",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "last_name",
+											"type": "String"
+										},
+										"sink": {
+											"name": "last_name",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "email",
+											"type": "String"
+										},
+										"sink": {
+											"name": "email",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "gender",
+											"type": "String"
+										},
+										"sink": {
+											"name": "gender",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "ip_address",
+											"type": "String"
+										},
+										"sink": {
+											"name": "ip_address",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "cc",
+											"type": "String"
+										},
+										"sink": {
+											"name": "cc",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "country",
+											"type": "String"
+										},
+										"sink": {
+											"name": "country",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "birthdate",
+											"type": "String"
+										},
+										"sink": {
+											"name": "birthdate",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "salary",
+											"type": "Double"
+										},
+										"sink": {
+											"name": "salary",
+											"type": "Decimal"
+										}
+									},
+									{
+										"source": {
+											"name": "title",
+											"type": "String"
+										},
+										"sink": {
+											"name": "title",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "comments",
+											"type": "String"
+										},
+										"sink": {
+											"name": "comments",
+											"type": "String"
+										}
+									}
+								]
 							}
 						},
 						"inputs": [
@@ -522,12 +645,7 @@
 							{
 								"referenceName": "AzureSynapseAnalyticsTable1",
 								"type": "DatasetReference",
-								"parameters": {
-									"TableName": {
-										"value": "@pipeline().parameters.Table_Name",
-										"type": "Expression"
-									}
-								}
+								"parameters": {}
 							}
 						]
 					}
@@ -535,11 +653,6 @@
 				"policy": {
 					"elapsedTimeMetric": {},
 					"cancelAfter": {}
-				},
-				"parameters": {
-					"Table_Name": {
-						"type": "string"
-					}
 				},
 				"annotations": []
 			},
