@@ -24,6 +24,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -78,6 +79,7 @@
 								],
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
+									"recursive": true,
 									"enablePartitionDiscovery": false
 								},
 								"formatSettings": {
@@ -133,8 +135,7 @@
 									}
 								},
 								"sink": {
-									"type": "SqlDWSink",
-									"sqlWriterUseTableLock": false
+									"type": "SqlDWSink"
 								},
 								"enableStaging": true,
 								"stagingSettings": {
@@ -168,6 +169,8 @@
 				}
 			}
 		],
-		"annotations": []
-	}
+		"annotations": [],
+		"lastPublishTime": "2022-01-24T15:56:16Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
 }
