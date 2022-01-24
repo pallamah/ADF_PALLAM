@@ -26,12 +26,7 @@
 					},
 					"sink": {
 						"type": "SqlDWSink",
-						"allowPolyBase": true,
-						"polyBaseSettings": {
-							"rejectValue": 0,
-							"rejectType": "value",
-							"useTypeDefault": true
-						},
+						"allowCopyCommand": true,
 						"disableMetricsCollection": false
 					},
 					"enableStaging": true,
@@ -47,82 +42,102 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "id",
-									"type": "Int32"
-								},
-								"sink": {
-									"name": "id",
-									"type": "Int32"
-								}
-							},
-							{
-								"source": {
-									"name": "first_name",
-									"type": "String"
-								},
-								"sink": {
-									"name": "first_name",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "last_name",
-									"type": "String"
-								},
-								"sink": {
-									"name": "last_name",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "email",
-									"type": "String"
-								},
-								"sink": {
-									"name": "email",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "gender",
-									"type": "String"
-								},
-								"sink": {
-									"name": "gender",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "cc",
-									"type": "String"
-								},
-								"sink": {
-									"name": "cc",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "country",
-									"type": "String"
-								},
-								"sink": {
-									"name": "country",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "birthdate",
-									"type": "String"
-								},
-								"sink": {
-									"name": "birthdate",
+									"name": "registration_dttm",
 									"type": "DateTime"
+								},
+								"sink": {
+									"name": "registration_dttm",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "id",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "id",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "first_name",
+									"type": "String"
+								},
+								"sink": {
+									"name": "first_name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "last_name",
+									"type": "String"
+								},
+								"sink": {
+									"name": "last_name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "email",
+									"type": "String"
+								},
+								"sink": {
+									"name": "email",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "gender",
+									"type": "String"
+								},
+								"sink": {
+									"name": "gender",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ip_address",
+									"type": "String"
+								},
+								"sink": {
+									"name": "ip_address",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "cc",
+									"type": "String"
+								},
+								"sink": {
+									"name": "cc",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "country",
+									"type": "String"
+								},
+								"sink": {
+									"name": "country",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "birthdate",
+									"type": "String"
+								},
+								"sink": {
+									"name": "birthdate",
+									"type": "String"
 								}
 							},
 							{
@@ -132,7 +147,17 @@
 								},
 								"sink": {
 									"name": "salary",
-									"type": "Int32"
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "title",
+									"type": "String"
+								},
+								"sink": {
+									"name": "title",
+									"type": "String"
 								}
 							},
 							{
