@@ -23,11 +23,20 @@
 		"SqlServer_EMP_TGT_password": {
 			"value": ""
 		},
+		"FileServer1_password": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://adlsgen2mahesh.dfs.core.windows.net"
 		},
 		"SqlServer_EMP_TGT_properties_typeProperties_userName": {
 			"value": "Visitor"
+		},
+		"FileServer1_properties_typeProperties_host": {
+			"value": "D:\\nginx-1.20.2\\nginx-1.20.2\\logs"
+		},
+		"FileServer1_properties_typeProperties_userId": {
+			"value": "pallamah"
 		},
 		"containerUri": {
 			"value": ""
