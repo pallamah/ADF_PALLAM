@@ -1,0 +1,17 @@
+{
+	"name": "FileServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "D:\\nginx-1.20.2\\nginx-1.20.2\\logs",
+			"userId": "pallamah",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjNWZjNDY5OC0xMzdiLTRkZTgtYjU3Zi1mNDI5ZjljZDgyNTYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "azselhosstedir",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
