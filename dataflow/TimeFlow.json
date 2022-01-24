@@ -1,0 +1,32 @@
+{
+	"name": "TimeFlow",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "DelimitedText3",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "DelimitedText4",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "DerivedColumn1"
+				}
+			],
+			"script": "source(output(\n\t\tISODateTimeUTC as string,\n\t\tLat as double,\n\t\tLon as double,\n\t\tSOG as double,\n\t\tCOG as double,\n\t\tTWD as double,\n\t\tTWA as double,\n\t\tVMG as double\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> source1\nsource1 derive(ISODateTimeUTC = toTimestamp(concat(substring(ISODateTimeUTC,0,10),' ',substring(ISODateTimeUTC,12,8)),'yyyy-mm-dd HH:mm:ss')) ~> DerivedColumn1\nDerivedColumn1 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tpartitionFileNames:['Cleanedcsvfile_timestamp'],\n\tumask: 0022,\n\tpreCommands: [],\n\tpostCommands: [],\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\tpartitionBy('hash', 1)) ~> sink1"
+		}
+	}
+}
